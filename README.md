@@ -87,7 +87,7 @@ RegisterNumber: 25018400
 **TIMING DIAGRAM FOR UP COUNTER**
 
 
-<img width="1918" height="517" alt="image" src="https://github.com/user-attachments/assets/1481fa21-7d2b-4157-a249-66628811dedc" />
+<img width="1918" height="588" alt="image" src="https://github.com/user-attachments/assets/07b307a5-ec7f-44a4-bf3a-05981c481b5e" />
 
 
 **TIMING DIAGRAM FOR DOWN COUNTER**
