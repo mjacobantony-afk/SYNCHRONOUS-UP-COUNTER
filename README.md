@@ -32,15 +32,71 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+Synchronous Up Counter:
 
-Developed by: RegisterNumber:
-*/
+```
+module upcounter (
+    input clk,
+    input rstn,
+    output reg [3:0] out
+);
+
+always @(posedge clk) begin
+    if (!rstn)
+        out <= 4'b0000;
+    else
+        out <= out + 1;
+end
+endmodule
+```
+
+Synchronous Down Counter:
+
+```
+module downcounter (
+    input clk,
+    input rstn,
+    output reg [3:0] out
+);
+
+always @(posedge clk) begin
+    if (!rstn)
+        out <= 4'b0000;
+    else
+        out <= out - 1;
+end
+endmodule
+```
+Developed by: Jacob Antony M
+
+RegisterNumber: 25018400
+
 
 **RTL LOGIC UP COUNTER**
 
-**TIMING DIAGRAM FOR IP COUNTER**
+
+<img width="1508" height="800" alt="image" src="https://github.com/user-attachments/assets/003119a6-bfba-493b-82e7-c91ea3322ffc" />
+
+
+**RTL LOGIC DOWN COUNTER**
+
+
+<img width="1550" height="808" alt="image" src="https://github.com/user-attachments/assets/258a93e9-eddd-4cc8-bbeb-005b212299ae" />
+
+
+**TIMING DIAGRAM FOR UP COUNTER**
+
+
+<img width="1918" height="517" alt="image" src="https://github.com/user-attachments/assets/1481fa21-7d2b-4157-a249-66628811dedc" />
+
+
+**TIMING DIAGRAM FOR DOWN COUNTER**
+
+
+<img width="1918" height="555" alt="image" src="https://github.com/user-attachments/assets/b4cead11-2dc3-4f34-a365-ebc643163478" />
+
 
 **TRUTH TABLE**
 
 **RESULTS**
+We have succesfully implemented 4 bit Synchronous Up and Down Counter Program in Quartus II, and have obtained the RTL Logic and Waveform Diagrams.
